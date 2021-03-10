@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+h1,h2,h3 {
+    /* color:#60e0d8; */
+    color: #feffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight:bold;
+}
+
+h2 {
+    font-size: 48px ;
+}
+
+.highligted-text {
+    /* color: #feffff; */
+    color:#60e0d8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    padding: 0;
+    color: #feffff;
+    transition: ease 1s;
+}
+
+.navbar-item {
+    transition: color 1s;
+    font-size: 24px;
+}
+
+.navbar-item:hover {
+    color: #60e0d8 !important;
+    background-color: black !important;
+    text-decoration: underline !important;
+    text-decoration-color: #FEDC56 !important;
+}
+
+.navbar-item.active {
+    color: #60e0d8 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #FEDC56 !important;
+}
+
+.navbar-item.active:hover {
+    cursor: default;
+}
+
+/* Page Elements */
+.button {
+    background-color: transparent;
+    font-size:24px;
+    color:#feffff !important;
+    margin-top: 15px;
+    border: 1px solid #FEDC56;
+}
+
+.button:hover {
+    background-color: #60e0d8;
+    /* background-color:#FEDC56; */
+    color: black !important;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+/* index.html */
+#welcomeDiv {
+    margin-top:10% ;
+    /* opacity:1;
+    transition: ease 2s; */
+}
+
+/* about.html */
+#ashSelfie{
+    max-width:350px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+/* page transitions */
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
