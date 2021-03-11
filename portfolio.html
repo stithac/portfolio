@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Stith - Portfolio</title>
+    <title>Ashley Stith - About</title>
 
     <!-- Reset stylesheet -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -20,11 +20,50 @@
     <!-- Link to my external stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <div class = "wrapper fade-in">
-        <div class = "columns is-vcentered">
-            
+<body class="light">
+    <div id="bannerDiv" class="dark light-text">
+        <div class = "columns is-vcentered" style="width:80%; margin: 0 auto">
+            <div id = "" class = "column is-half">
+                <a href="./index.html" style="text-decoration:none"><h3 style="color: #60e0d8;">Ashley Stith</h3></a>
+                <p style="font-weight:bolder">Web Designer & Developer</p>
+            </div>
+            <div id = "" class = "column is-half" style="text-align: right;">
+                <p><i class="far fa-envelope"></i>: ashleyc.stith@gmail.com</p>
+                <p><i class="fas fa-mobile-alt"></i>: 703-xxx-xxxx</p>
+                <span><i class="fab fa-github"></i>: <a href="https://github.com/stithac" style="color:#fafafa">Github Profile</a></span><br>
+                <span><i class="fab fa-linkedin"></i>: <a href="https://www.linkedin.com/in/ashleystith/" style="color:#fafafa">LinkedIn Profile</a></span>
+            </div>
         </div>
     </div>
+    <!-- Navbar -->
+    <nav class="navbar light-navbar" role="navigation" aria-label="main navigation" style="margin: 0;">
+        <div class="columns columns-shrunk">
+                <div class="navbar-brand">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDiv">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarDiv" class="navbar-menu fade-in">
+                    <div class="navbar-start">
+                      </div>
+                          <div class="navbar-end">
+                              <a class="navbar-item" href="./index.html">Home</a>
+                              <a class="navbar-item" href="./about.html">About Me</a>
+                              <a class="navbar-item  active">Portfolio</a>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <div class = "columns is-vcentered columns-shrunk">
+        <div class="column">
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/navbarburger.js"></script>
 </body>
 </html>

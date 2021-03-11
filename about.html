@@ -21,79 +21,87 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="light">
+    <div id="bannerDiv" class="dark light-text">
+        <div class = "columns is-vcentered columns-shrunk">
+            <div id = "" class = "column is-half">
+                <a href="./index.html" style="text-decoration:none"><h3 style="color: #60e0d8;">Ashley Stith</h3></a>
+                <p style="font-weight:bolder">Web Designer & Developer</p>
+            </div>
+            <div id = "" class = "column is-half" style="text-align: right;">
+                <p><i class="far fa-envelope"></i>: ashleyc.stith@gmail.com</p>
+                <p><i class="fas fa-mobile-alt"></i>: 703-xxx-xxxx</p>
+                <span><i class="fab fa-github"></i>: <a href="https://github.com/stithac" style="color:#fafafa">Github Profile</a></span><br>
+                <span><i class="fab fa-linkedin"></i>: <a href="https://www.linkedin.com/in/ashleystith/" style="color:#fafafa">LinkedIn Profile</a></span>
+            </div>
+        </div>
+    </div>
     <!-- Navbar -->
-    <nav class="navbar light-navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <!-- <img src="" width="112" height="28"> -->
-          </a>
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDiv">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarDiv" class="navbar-menu fade-in has-text-right">
-          <div class="navbar-start">
-            </div>
-                <div class="navbar-end">
-                    <a class="navbar-item" href="./index.html">Home</a>
-                    <a class="navbar-item  active">About Me</a>
-                    <a class="navbar-item">Portfolio</a>
+    <nav class="navbar light-navbar" role="navigation" aria-label="main navigation" style="margin: 0;">
+        <div class="columns columns-shrunk">
+                <div class="navbar-brand">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDiv">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
+                <div id="navbarDiv" class="navbar-menu fade-in">
+                    <div class="navbar-start">
+                      </div>
+                          <div class="navbar-end">
+                              <a class="navbar-item" href="./index.html">Home</a>
+                              <a class="navbar-item active">About Me</a>
+                              <a class="navbar-item" href="./portfolio.html">Portfolio</a>
+                          </div>
+                      </div>
+                  </div>
             </div>
-        </div>
-    </nav>
-    <div class="wrapper">
-        <div class = "columns is-vcentered">
-            <div class="column">
-                <div class="content is-vcentered">
-                    <div class = "wrapper">
-                        <div class = "columns" style="width:80%; margin: 0 auto">
-                            <div id = "" class = "column is-three-quarters">
-                                <div>
-                                    <h3 class = "dark-text run-right has-text-centered" style="margin-bottom: 0; font-style: italic;  font-family: 'Open Sans Condensed', sans-serif;">Personal <span >&</span> Professional</h3>
-                                    <h3 class = "dark-text run-right has-text-centered" style="font-weight: bolder; margin-top: 5px; ">Background</h3>
-                                    <hr style="width:95%; margin: 0 auto 10px auto; background-color:#363636" class="run-right-two">
-                                    <div class="has-text-centered run-right-three highlighted-text" style="margin-bottom:3px"><span style="font-style: italic; font-weight:bold; font-size: 20px">An engineer with a passion for web design & development.</span> </div>
-                                    <p class="run-right-four">Born and raised in Virginia, I've lived in "The Old Dominion" my entire life. Since an early age, I've always been interested in technology and figuring out how things worked. As a kid, I took apart small electronics (speakers, remote controls, tvs, etc.), much to the dismay of my parents! Never losing that sense of curiosity, I went on to attend Old Dominion University where I completed my Bachelors degree in Electrical Engineering with a minor in Engineering Management. My Engineering curriculum exposed me to coding (C++) for the first time. Although it was not love at first sight initially, I have grown to love it!</p>
-                                    <p class="run-right-four">Upon graduating college, I was lucky enough to snag a federal contracting gig at one of the best consulting firms in the country. It allowed me to move to the DMV area and get my foot in the "Information Technology" door. I've now worked as a web developer for over 10 years and am always looking for new and exciting projects to work on.</p>
-                                    <h3 class = "dark-text run-right has-text-centered" style="font-weight: bolder; margin-top: 5px; ">Skills</h3>
-                                    <hr style="width:95%; margin: 0 auto 10px auto; background-color:#363636" class="run-right-two">
-                                    <div class="columns" style="width:80%; margin: 0 auto;">
-                                        <div class="column is-one-third run-right-two" style="padding:0">
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>CSS</li>
-                                                <li>JavaScript</li>
-                                            </ul>
-                                        </div>
-                                        <div class="column is-one-third run-right-two" style="padding:0">
-                                            <ul>
-                                                <li>Node.js</li>
-                                                <li>React</li>
-                                                <li>Angular</li>
-                                            </ul>
-                                        </div>
-                                        <div class="column is-one-third run-right-two" style="padding:0">
-                                            <ul>
-                                                <li>SQL</li>
-                                                <li>MongoDB</li>
-                                                <li>Mongoose</li>
-                                            </ul>
-                                        </div>
-                                    </div>
 
-                                </div>
-                            </div>
-                            <div id = "" class = "column is-one-quarter" style="text-align: center;">
-                                <img id="ashSelfie" src="./img/ash5.jpg" alt="Ashley" class="fade-in run-left" style="margin:0 auto !important">
-                            </div>
-                        </div>
+    </nav>
+    <div class = "columns is-vcentered columns-shrunk">
+        <div id = "" class = "column is-one-quarter is-vcentered" style="text-align: center !important; padding: 0 auto">
+            <img id="ashSelfie" src="./img/ash2.jpg" alt="Ashley" class="fade-in run-right" style="margin: 0 15%">
+                <div style="text-align: center;">
+                    <a href="" class="button btn2"><i class="far fa-file" style="margin-right:5px; background-color: #EFE146"></i>View My Resume</a>
+                </div>
+        </div>
+        <div id = "" class = "column is-three-quarters">
+            <div id = "backgroundContentDiv" style="text-align: center;">
+                <h3 class = "dark-text run-left has-text-centered" style="margin-top: 10px; margin-bottom: 5px; text-decoration: underline; ">Background</h3>
+                <!-- <hr style="width:30%; margin: 0 auto 10px auto; background-color:#363636" class="run-left-two"> -->
+                <div class="has-text-centered run-left-three highlighted-text" style="margin-bottom:3px"><span style="font-style: italic; ">An engineer with a passion for web design & development.</span>
+                </div>
+                <p class="run-left-four">Born and raised in Virginia, I've lived in "The Old Dominion" my entire life. Since an early age, I've always been interested in technology and figuring out how things worked. As a kid, I took apart small electronics (speakers, remote controls, tvs, etc.), much to the dismay of my parents! Never losing that sense of curiosity, I went on to attend Old Dominion University where I completed my Bachelors degree in Electrical Engineering with a minor in Engineering Management. My Engineering curriculum exposed me to coding (C++) for the first time. Although it was not love at first sight initially, I have grown to love coding!</p><br>
+                <p class="run-left-four">Upon graduating college, I was lucky enough to snag a federal contracting gig at one of the best consulting firms in the country. It allowed me to move to the DMV area and get my foot in the "Information Technology" door. I've now worked as a web developer for over 10 years and am always looking for new and exciting opportunities.</p><br>
+                <h3 class = "dark-text run-left has-text-centered" style="margin-bottom: 5px; text-decoration: underline; ">Skills</h3>
+                <!-- <hr style="width:30%; margin: 0 auto 10px auto; background-color:#363636" class="run-right-two"> -->
+                <div class="columns columns-shrunk" style="text-align: center;">
+                    <div class="column is-one-third run-left-two" style="padding:0">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="column is-one-third run-left-two" style="padding:0">
+                        <ul>
+                            <li>Node.js</li>
+                            <li>React</li>
+                            <li>Angular</li>
+                        </ul>
+                    </div>
+                    <div class="column is-one-third run-left-two" style="padding:0">
+                        <ul>
+                            <li>SQL</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="js/navbarburger.js"></script>
 </body>
 </html>

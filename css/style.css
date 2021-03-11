@@ -14,17 +14,13 @@ h1 {
 }
 
 h2 {
-    font-size: 48px ;
+    font-size: 36px ;
 }
 
 h3 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-h4 {
     font-size: 24px;
-    font-weight: bold;
+    /* font-weight: bold; */
+
 }
 
 p {
@@ -50,10 +46,18 @@ ul li::before {
     font-family: 'Montserrat', sans-serif;
 }
 
+.columns-shrunk {
+    width:80%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
 /* Navbar */
 .navbar {
     background-color: black;
     padding: 0;
+    border-top: 3px solid #60e0d8;
+    margin: 0;
 }
 
 .navbar-item {
@@ -103,11 +107,16 @@ ul li::before {
 }
 
 /* Page Elements */
-.button {
+.btn1 {
     background-color: transparent;
     font-size:24px;
     color:#fafafa !important;
     margin-top: 15px;
+    border: 1px solid #EFE146;
+}
+.btn2 {
+    background-color: transparent;
+    margin-top: 5px;
     border: 1px solid #EFE146;
 }
 
@@ -129,18 +138,31 @@ ul li::before {
     margin-top:10% ;
 }
 
+#bannerDiv {
+    height: 130px;
+    background-color: #fafafa;
+}
+
 /* about.html */
 #ashSelfie{
-    max-width:400px;
+    max-height:350px;
     height: auto;
     float: left;
-    margin-right: 10px;
+    margin: 0 auto;
     border-radius: 50%;
 }
 
 /* custom classes */
 .light {
     background-color: #fafafa;
+}
+
+.light-text {
+    color: #fafafa;
+}
+
+.dark {
+    background-color: black !important;
 }
 
 .dark-text {
@@ -176,26 +198,26 @@ ul li::before {
 	animation-timing-function: ease-out;
 }
 
-.run-right-two {
+.run-left-two {
     animation: linear;
-    animation-name: runRight;
+    animation-name: runLeft;
+    animation-duration: .75s;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+.run-left-three {
+    animation: linear;
+    animation-name: runLeft;
     animation-duration: 1s;
     animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 }
 
-.run-right-three {
+.run-left-four {
     animation: linear;
-    animation-name: runRight;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-}
-
-.run-right-four {
-    animation: linear;
-    animation-name: runRight;
-    animation-duration: 2s;
+    animation-name: runLeft;
+    animation-duration: 1.25s;
     animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 }

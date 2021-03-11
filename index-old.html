@@ -24,38 +24,37 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation" style="margin: 0; border-top: none;">
-        <div class="columns columns-shrunk">
-                <div class="navbar-brand">
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDiv">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <!-- <img src="" width="112" height="28"> -->
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDiv">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarDiv" class="navbar-menu fade-in">
+          <div class="navbar-start">
+            </div>
+                <div class="navbar-end">
+                    <a class="navbar-item active">Home</a>
+                    <a class="navbar-item" href="./about.html">About Me</a>
+                    <a class="navbar-item">Portfolio</a>
                 </div>
-                <div id="navbarDiv" class="navbar-menu fade-in">
-                    <div class="navbar-start">
-                      </div>
-                          <div class="navbar-end">
-                              <a class="navbar-item active">Home</a>
-                              <a class="navbar-item" href="./about.html">About Me</a>
-                              <a class="navbar-item" href="./portfolio.html">Portfolio</a>
-                          </div>
-                      </div>
-                  </div>
             </div>
         </div>
     </nav>
     <div class = "columns is-vcentered">
         <div id = "welcomeDiv" class = "column is-full has-text-centered fade-in">
-            <h1>Hi, my name is <span class="highlighted-text">Ashley Stith.</span></h1>
-            <h2>I am a full-stack web developer.</h2>
+            <h1 v-if="show">Hi, my name is <span class="highlighted-text">Ashley Stith.</span></h1>
+            <h2 v-if="show">I am a full-stack web developer.</h2>
             <a href="./portfolio.html" class="button btn1">View My Work<i class="fas fa-arrow-right" style="margin-left:5px"></i></a>
         </div>
     </div>
     <!-- <canvas></canvas> -->
     <!-- <script src="./js/canvas.js"></script> -->
-    <script type="text/javascript" src="js/navbarburger.js"></script>
 
 </body>
 </html>
