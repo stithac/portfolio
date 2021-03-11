@@ -1,12 +1,10 @@
 body {
     background-color: black;
     font-family: 'Open Sans Condensed', sans-serif;
-
 }
 
-h1,h2,h3 {
-    /* color:#60e0d8; */
-    color: #feffff;
+h1, h2, h3, h4 {
+    color: #fafafa;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,81 +17,187 @@ h2 {
     font-size: 48px ;
 }
 
-.highligted-text {
-    /* color: #feffff; */
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";
+    color: #60e0d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.highlighted-text {
     color:#60e0d8;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navbar */
 .navbar {
     background-color: black;
     padding: 0;
-    color: #feffff;
-    transition: ease 1s;
 }
 
 .navbar-item {
-    transition: color 1s;
+    /* transition: color 1s; */
     font-size: 24px;
+    color: #fafafa !important;
 }
 
 .navbar-item:hover {
     color: #60e0d8 !important;
     background-color: black !important;
     text-decoration: underline !important;
-    text-decoration-color: #FEDC56 !important;
+    text-decoration-color: #EFE146 !important;
 }
 
 .navbar-item.active {
-    color: #60e0d8 !important;
-    text-decoration: underline !important;
-    text-decoration-color: #FEDC56 !important;
+    color: #EFE146 !important;
 }
 
 .navbar-item.active:hover {
     cursor: default;
+    text-decoration: none !important;
+}
+
+.light-navbar {
+    background-color: #fafafa;
+}
+
+.light-navbar .navbar-item {
+    color:#363636 !important;
+}
+
+.light-navbar .navbar-item:hover {
+    color: #60e0d8 !important;
+    background-color: #fafafa !important;
+    text-decoration: underline !important;
+    text-decoration-color: #EFE146 !important;
+}
+
+.light-navbar .navbar-item.active {
+    color: #EFE146 !important;
+}
+
+.light-navbar .navbar-item.active:hover {
+    cursor: default;
+    text-decoration: none !important;
 }
 
 /* Page Elements */
 .button {
     background-color: transparent;
     font-size:24px;
-    color:#feffff !important;
+    color:#fafafa !important;
     margin-top: 15px;
-    border: 1px solid #FEDC56;
+    border: 1px solid #EFE146;
 }
 
 .button:hover {
     background-color: #60e0d8;
-    /* background-color:#FEDC56; */
+    /* background-color:#EFE146; */
     color: black !important;
     text-decoration: none;
     transition: background-color 1s;
 }
 
+.card {
+    width:60%;
+    margin: 50px auto;
+}
+
 /* index.html */
 #welcomeDiv {
     margin-top:10% ;
-    /* opacity:1;
-    transition: ease 2s; */
 }
 
 /* about.html */
 #ashSelfie{
-    max-width:350px;
+    max-width:400px;
     height: auto;
     float: left;
     margin-right: 10px;
-    border-radius: 30%;
+    border-radius: 50%;
 }
 
-/* page transitions */
+/* custom classes */
+.light {
+    background-color: #fafafa;
+}
+
+.dark-text {
+    color: black;
+}
+
+.border {
+    border-bottom: 1px solid #60e0d8 !important;
+}
+
+/* page and element transitions */
 .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-duration: 3s;
+}
+
+.run-left {
+    animation: linear;
+    animation-name: runLeft;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+.run-right {
+    animation: linear;
+    animation-name: runRight;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+.run-right-two {
+    animation: linear;
+    animation-name: runRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+.run-right-three {
+    animation: linear;
+    animation-name: runRight;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+.run-right-four {
+    animation: linear;
+    animation-name: runRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-out;
 }
 
 @keyframes fadeInOpacity {
@@ -103,4 +207,26 @@ h2 {
 	100% {
 		opacity: 1;
 	}
+}
+
+@keyframes runLeft {
+    0% {
+      left: 0;
+      transform: translateX(200%);
+    }
+    100% {
+      left: 100%;
+      transform: translateX(0%);
+    }
+}
+
+@keyframes runRight {
+    0% {
+      right: 0;
+      transform: translateX(-150%);
+    }
+    100% {
+      right: 100%;
+      transform: translateX(0%);
+    }
 }
