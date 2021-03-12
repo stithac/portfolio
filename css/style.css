@@ -1,4 +1,5 @@
 body {
+
     background-color: black;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -131,6 +132,7 @@ ul li::before {
 .card {
     width:60%;
     margin: 50px auto;
+    height: 100%;
 }
 
 /* index.html */
