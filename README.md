@@ -25,3 +25,5 @@ Bulma framework
 ## Contribution Guidlines
 Direct link to repository: https://github.com/stithac/portfolio
 
+## Deployment
+The site can be accessed here: https://stithac.github.io/portfolio/about.html
