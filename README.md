@@ -8,7 +8,7 @@ This site is built using the Bulma framework to ensure responsiveness on a varie
 ## Portfolio Page
 Repo has been updated for the Career assignment: Update Portfolio Page. Screenshot of Portfolio page with live links to activities and Project 1 included below:
 
-![Portfolio Page](./Assets/screenshot.PNG)
+![Portfolio Page](./img/portfolio-screenshot.PNG)
 
 ## Setup/Installation Requirements
 * Open site using Google Chrome
